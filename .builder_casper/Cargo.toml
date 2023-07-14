@@ -1,0 +1,47 @@
+[package]
+name = "builder"
+edition = "2021"
+version = "1.0.0"
+
+[workspace]
+members = []
+
+[dependencies.odra]
+version = "0.4.0"
+features = ["casper"]
+default-features = false
+
+[dependencies.something]
+path = "/home/mike/dao/live-test/"
+features = ["casper"]
+default-features = false
+
+[[bin]]
+path = "src/contracts_build.rs"
+name = "contracts_build"
+test = false
+doctest = false
+bench = false
+doc = false
+edition = "2021"
+required-features = []
+
+[[bin]]
+path = "src/flipper_wasm.rs"
+name = "flipper"
+test = false
+doctest = false
+bench = false
+doc = false
+edition = "2021"
+required-features = []
+
+[[bin]]
+path = "src/some_contract_wasm.rs"
+name = "some_contract"
+test = false
+doctest = false
+bench = false
+doc = false
+edition = "2021"
+required-features = []

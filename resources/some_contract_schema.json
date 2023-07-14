@@ -1,0 +1,39 @@
+{
+  "name": "SomeContract",
+  "entrypoints": [
+    {
+      "name": "init",
+      "is_mutable": true,
+      "args": [
+        {
+          "name": "name",
+          "ty": "String"
+        }
+      ],
+      "return_ty": "Unit"
+    },
+    {
+      "name": "add_something",
+      "is_mutable": true,
+      "args": [
+        {
+          "name": "some_text",
+          "ty": "String"
+        }
+      ],
+      "return_ty": "Unit"
+    },
+    {
+      "name": "get_something",
+      "is_mutable": true,
+      "args": [
+        {
+          "name": "id",
+          "ty": "U64"
+        }
+      ],
+      "return_ty": "Any"
+    }
+  ],
+  "events": []
+}
