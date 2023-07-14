@@ -49,7 +49,7 @@ mod tests {
     use super::{SomeContractDeployer, Something};
 
     #[test]
-    fn mk_proposal() {
+    fn add_something() {
         
         let admin = test_env::get_account(0);
         test_env::set_caller(admin);
